@@ -1,0 +1,25 @@
+#qiankun-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: calc(100% - 15px);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.App {
+    height: 100%;
+}
+
+#microRoot {
+    transform: translateZ(0);
+    height: calc(100% - 45px);
+    overflow: hidden;
+}
+
+* {
+    box-sizing: content-box;
+}

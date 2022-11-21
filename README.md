@@ -1,2 +1,3 @@
-# BetterNCMBase
-PC版网易云客户端插件管理器的微前端基座
+# BetterNCM-Base
+
+[PC 版网易云客户端插件管理器](https://github.com/MicroCBer/BetterNCM)的微前端基座

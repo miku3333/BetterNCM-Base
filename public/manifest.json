@@ -1,0 +1,15 @@
+{
+  "manifest_version": 1,
+  "name": "qiankun",
+  "version": "0.1.0",
+  "injects": {
+    "Main": [
+      {
+        "file": "ncm-init.js"
+      },
+      {
+        "file": "index.js"
+      }
+    ]
+  }
+}
