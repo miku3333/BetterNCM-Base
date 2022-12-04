@@ -1,5 +1,5 @@
 #qiankun-root {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: calc(100% - 10px);
@@ -17,9 +17,13 @@
 #microRoot {
     transform: translateZ(0);
     height: calc(100% - 45px);
-    overflow: hidden;
+    overflow: auto;
 }
 
 * {
     box-sizing: content-box;
+}
+
+.ant-tooltip-placement-right {
+    display: none !important;
 }

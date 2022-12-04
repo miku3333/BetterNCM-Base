@@ -1,0 +1,12 @@
+.about {
+    display: block;
+    margin-left: 10px;
+    font-size: 28px;
+    height: 48px;
+    line-height: 48px;
+    color: #39c5bb;
+}
+
+.about:hover {
+    color: #40a9ff;
+}

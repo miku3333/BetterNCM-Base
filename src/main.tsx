@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import 'antd/dist/reset.css';
 import './main.css';
 import { BrowserRouter } from 'react-router-dom';
 import { initGlobalState, MicroAppStateActions, registerMicroApps, setDefaultMountApp, start } from 'qiankun';
@@ -24,7 +23,11 @@ registerMicroApps(
     }
 );
 start();
-// setDefaultMountApp('/miku-plugin');
+// shadow模式, document等会有一些问题
+// start({
+//     sandbox: { strictStyleIsolation: true }
+// });
+setDefaultMountApp('/miku-plugin');
 
 const actions: MicroAppStateActions = initGlobalState({ getStyleDom });
 const root = document.createElement('div');

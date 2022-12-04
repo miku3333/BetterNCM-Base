@@ -2,7 +2,6 @@ let appName = '';
 export const setAppName = (name: string) => (appName = name);
 
 export const styleMap: { [key: string]: any } = {};
-const qiankunDocument = document;
 const headAppend = HTMLHeadElement.prototype.appendChild;
 export const getStyleDom = (key: string) => {
     let appKey = `${appName}-${key}`;
@@ -11,11 +10,6 @@ export const getStyleDom = (key: string) => {
         HTMLHeadElement.prototype.appendChild = headAppend;
         const style = document.createElement('style');
         style.setAttribute('type', 'text/css');
-        console.log('##################################################');
-        console.log(qiankunDocument);
-        console.log(qiankunDocument.head);
-        console.log(qiankunDocument.body);
-        console.log('##################################################');
         styleMap[appKey] = document.head.appendChild(style);
     }
     console.log(styleMap[appKey]);

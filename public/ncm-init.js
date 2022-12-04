@@ -28,3 +28,27 @@ btn.className = 'fx j-flag fsection';
 btn.appendChild(document.createElement('a'));
 btn.children[0].innerText = '插件管理';
 btn.addEventListener('click', btnClick);
+
+// 点击发现音乐直接播放推荐音乐
+// betterncm.utils.waitForElement('.u-cover-daily').then(() => {
+//     const clickE = document.createEvent('MouseEvents');
+//     clickE.initEvent('click', true, true);
+//     const dailyBtn = document.body.appendChild(document.querySelector('.u-cover-daily').querySelector('.ply'));
+//     dailyBtn.style.display = 'none';
+//     let targetBtn = null;
+//     try {
+//         document.querySelectorAll('.fsection').forEach(item => {
+//             if (item.dataset.id === '/m/disc/') {
+//                 targetBtn = item;
+//                 throw new Error();
+//             }
+//         });
+//     } catch (e) {
+//         console.log(e);
+//     }
+//     const targetClick = e => {
+//         e.preventDefault();
+//         dailyBtn.dispatchEvent(clickE);
+//     };
+//     targetBtn.addEventListener('click', targetClick, true);
+// });
